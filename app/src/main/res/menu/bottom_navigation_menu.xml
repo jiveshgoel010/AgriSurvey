@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menuHome"
+        android:enabled="true"
+        android:icon="@drawable/round_home_24"
+        android:title="@string/menu_home"/>
+    <item
+        android:id="@+id/menuSurvey"
+        android:enabled="true"
+        android:icon="@drawable/baseline_insert_drive_file_24"
+        android:title="@string/menu_survey"/>
+    <item
+        android:id="@+id/menuInsights"
+        android:enabled="true"
+        android:icon="@drawable/analysis"
+        android:title="@string/menu_insights"/>
+    <item
+        android:id="@+id/menuProfile"
+        android:enabled="true"
+        android:icon="@drawable/round_account_circle_24"
+        android:title="@string/menu_profile" />
+</menu>

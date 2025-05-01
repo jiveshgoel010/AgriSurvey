@@ -1,0 +1,128 @@
+<resources>
+    <string name="app_name">AgriSurvey</string>
+    <string name="hello_blank_fragment">Hello</string>
+
+    <!-- Bottom Navigation Titles -->
+    <string name="menu_home">Home</string>
+    <string name="menu_survey">Survey</string>
+    <string name="menu_insights">Insights</string>
+    <string name="menu_profile">Profile</string>
+
+    <!-- Menu Item Titles for Top AppBar -->
+    <string name="title_home">Home</string>
+    <string name="title_survey">Survey</string>
+    <string name="title_insights">Insights</string>
+    <string name="title_profile">Profile</string>
+    <string name="action_translate">Translate</string>
+    <string name="action_logout">Logout</string>
+
+    <!-- Placeholder for any dynamic text or labels -->
+    <string name="welcome_message">Welcome to AgriSurvey!</string>
+    <string name="app_introduction">AgriSurvey empowers farmers with easy-to-use surveys that capture real-time data about land size, irrigation, crops, and seasonal patterns. With this data, we generate clear visual insights to help you make informed choices every step of the way. \n\nWhether you\'re planning your next season, evaluating crop performance, or optimizing your irrigation strategy — AgriSurvey gives you the tools to farm smarter and more efficiently. \n\nStart your journey towards smarter farming today!</string>
+    <string name="start_survey_cta">Start Survey</string>
+    <string name="name">Name</string>
+    <string name="phone">Phone</string>
+    <string name="land_size_in_acres">Land Size (in acres)</string>
+    <string name="irrigation_type">Irrigation Type</string>
+    <string name="season">Season</string>
+    <string name="crop_type">Crop Type</string>
+    <string name="crops_grown">Crops Grown</string>
+    <string name="cropping_pattern">Cropping Pattern</string>
+    <string name="location">Location</string>
+    <string name="use_current_location">Use Current Location</string>
+    <string name="state">State</string>
+    <string name="submit_survey">Submit Survey</string>
+    <string name="name_with_hyphen">Name -</string>
+    <string name="email_with_hyphen">Email -</string>
+    <string name="terms_and_conditions">Terms &amp; Conditions</string>
+    <string name="contact_support">Contact Support</string>
+    <string name="no_data_available">No data available</string>
+    <string name="crop_type_distribution">Crop Type Distribution</string>
+    <string name="crop_type_desc">Shows the proportion of different crop types reported in the surveys.</string>
+    <string name="irrigation_type_usage">Irrigation Type Usage</string>
+    <string name="irrigation_type_desc">Breakdown of the various irrigation methods used by farmers.</string>
+    <string name="cropping_pattern_trends">Cropping Pattern Trends</string>
+    <string name="cropping_pattern_desc">Displays the types of cropping patterns used across surveyed farms.</string>
+    <string name="landholding_size_distribution">Landholding Size Distribution</string>
+    <string name="landholding_size_desc">Shows how landholdings are distributed across different size ranges.</string>
+    <string name="geographical_survey_spread">Geographical Survey Spread</string>
+    <string name="heatmap_desc">Heatmap of locations where surveys have been submitted.</string>
+
+
+    <!-- Irrigation Types -->
+    <string-array name="irrigation_types">
+        <item>Canal</item>
+        <item>Tube Well</item>
+        <item>Drip</item>
+        <item>Rainfed</item>
+        <item>Other</item>
+    </string-array>
+
+    <!-- Seasons -->
+    <string-array name="seasons">
+        <item>Rabi</item>
+        <item>Kharif</item>
+        <item>Zaid</item>
+        <item>Annual</item>
+    </string-array>
+
+    <!-- Crop Types -->
+    <string-array name="crop_types">
+        <item>Wheat</item>
+        <item>Rice</item>
+        <item>Maize</item>
+        <item>Pulses</item>
+        <item>Spices</item>
+        <item>Vegetables</item>
+        <item>Fruits</item>
+        <item>Commercial</item>
+        <item>Other</item>
+    </string-array>
+
+    <!-- Cropping Patterns -->
+    <string-array name="cropping_patterns">
+        <item>Mono-cropping</item>
+        <item>Inter-cropping</item>
+        <item>Mixed-cropping</item>
+        <item>Relay-cropping</item>
+    </string-array>
+
+    <!-- States of India -->
+    <string-array name="indian_states">
+        <item>Andhra Pradesh</item>
+        <item>Arunachal Pradesh</item>
+        <item>Assam</item>
+        <item>Bihar</item>
+        <item>Chhattisgarh</item>
+        <item>Delhi</item>
+        <item>Goa</item>
+        <item>Gujarat</item>
+        <item>Haryana</item>
+        <item>Himachal Pradesh</item>
+        <item>Jharkhand</item>
+        <item>Karnataka</item>
+        <item>Kerala</item>
+        <item>Madhya Pradesh</item>
+        <item>Maharashtra</item>
+        <item>Manipur</item>
+        <item>Meghalaya</item>
+        <item>Mizoram</item>
+        <item>Nagaland</item>
+        <item>Odisha</item>
+        <item>Punjab</item>
+        <item>Rajasthan</item>
+        <item>Sikkim</item>
+        <item>Tamil Nadu</item>
+        <item>Telangana</item>
+        <item>Tripura</item>
+        <item>Uttar Pradesh</item>
+        <item>Uttarakhand</item>
+        <item>West Bengal</item>
+        <item>Andaman and Nicobar Islands</item>
+        <item>Chandigarh</item>
+        <item>Dadra and Nagar Haveli and Daman and Diu</item>
+        <item>Lakshadweep</item>
+        <item>Puducherry</item>
+    </string-array>
+
+</resources>

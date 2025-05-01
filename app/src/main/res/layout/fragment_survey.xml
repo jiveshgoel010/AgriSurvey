@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:fillViewport="true"
+    android:padding="24dp"
+    android:scrollbars="none"
+    tools:context=".ui.survey.SurveyFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="32dp">
+
+        <!-- Name -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            app:boxBackgroundMode="outline"
+            app:shapeAppearance="@style/ShapeAppearance.Material3.MediumComponent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/name"
+                android:textColor="@color/colorOnSurface" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Phone -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            app:boxBackgroundMode="outline"
+            app:shapeAppearance="@style/ShapeAppearance.Material3.MediumComponent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/phone"
+                android:inputType="phone" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Land Size -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:hint="@string/land_size_in_acres"
+            app:boxBackgroundMode="outline"
+            app:shapeAppearance="@style/ShapeAppearance.Material3.MediumComponent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editLandSize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Irrigation Type Dropdown -->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:hint="@string/irrigation_type"
+            app:boxBackgroundMode="outline"
+            app:shapeAppearance="@style/ShapeAppearance.Material3.MediumComponent">
+
+            <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                android:id="@+id/dropdownIrrigation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:hint=""
+                android:popupBackground="@color/colorPrimaryContainer" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!-- Season Dropdown -->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:hint="@string/season"
+            app:boxBackgroundMode="outline"
+            app:shapeAppearance="@style/ShapeAppearance.Material3.MediumComponent">
+
+            <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                android:id="@+id/dropdownSeason"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:hint=""
+                android:popupBackground="@color/colorPrimaryContainer" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Crop Type -->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:hint="@string/crop_type"
+            app:boxBackgroundMode="outline"
+            app:shapeAppearance="@style/ShapeAppearance.Material3.MediumComponent">
+
+            <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                android:id="@+id/dropdownCropType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:hint=""
+                android:popupBackground="@color/colorPrimaryContainer" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Crops Grown -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:hint="@string/crops_grown"
+            app:boxBackgroundMode="outline"
+            app:shapeAppearance="@style/ShapeAppearance.Material3.MediumComponent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editCropsGrown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Cropping Pattern -->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:hint="@string/cropping_pattern"
+            app:boxBackgroundMode="outline"
+            app:shapeAppearance="@style/ShapeAppearance.Material3.MediumComponent">
+
+            <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                android:id="@+id/dropdownCroppingPattern"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:hint=""
+                android:popupBackground="@color/colorPrimaryContainer" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Location input -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:hint="@string/location"
+            app:boxBackgroundMode="outline"
+            app:shapeAppearance="@style/ShapeAppearance.Material3.MediumComponent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Current location button -->
+        <Button
+            android:id="@+id/btnCurrentLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="@string/use_current_location"
+            app:boxBackgroundMode="outline"
+            app:shapeAppearance="@style/ShapeAppearance.Material3.MediumComponent" />
+
+        <!-- Map View -->
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/mapView"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginBottom="16dp"
+            android:visibility="gone"
+            app:boxBackgroundMode="outline"
+            app:shapeAppearance="@style/ShapeAppearance.Material3.MediumComponent" />
+
+        <!-- City/State -->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:hint="@string/state"
+            app:boxBackgroundMode="outline"
+            app:shapeAppearance="@style/ShapeAppearance.Material3.MediumComponent">
+
+            <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                android:id="@+id/dropdownState"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:hint=""
+                android:popupBackground="@color/colorPrimaryContainer" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Submit Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_submit"
+            style="@style/Widget.Material3.Button"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/submit_survey"
+            android:textColor="@android:color/white"
+            app:boxBackgroundMode="outline"
+            app:shapeAppearance="@style/ShapeAppearance.Material3.MediumComponent" />
+
+    </LinearLayout>
+
+</ScrollView>
