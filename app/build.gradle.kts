@@ -20,6 +20,12 @@ android {
         versionCode = 1
         versionName = "1.0"
 
+        ndk {
+            ndk {
+                abiFilters.addAll(listOf("armeabi-v7a", "arm64-v8a", "x86", "x86_64"))
+            }
+        }
+
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
         val properties = Properties()
